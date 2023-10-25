@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container" id ="main">
+    <div class="navbar">
+        <div class="logo">
+            <span class="minimize"><i class="fas fa-calculator"></i></span>
+        </div>
+        <div class="nav">
+        <span class="menu"><i class="fas fa-bars" aria-hidden="true"></i>
+        </span>
+        <span class="options"><i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+        </span>
+       <span class="dark" id = "dark"><i class="fa fa-toggle-on" aria-hidden="true"></i></span>
+            </span>
+        </div>
+    </div>
+    <div class="result-section">
+        <div class="input-sec"></div>
+       <input type="text" name="" id="input" readonly>
+       <h4 id = "display"></h4>
+    </div>
+    <div class="calculator">
+    <div class="header">
+        <button  class = btn-head>mc</button> 
+        <button class = btn-head>m+</button>
+        <button class = btn-head>m-</button>
+        <button id = "mr">mr</button>
+    </div>
+    <div class="secondln">
+    <button class="head-2">C</button>
+    <button class="head-2" >+/-</button>
+    <button class="head-2" id = "perc">%</button>
+    <button class="head-2" id = "divide" onclick="appendToInput('/')">/</button>
+    </div>
+    <div class="main">
+        <button class = "white" onclick="appendToInput('7')"><b>7</b></button>
+        <button class = "white" onclick="appendToInput('8')">8</button>
+        <button class = "white" onclick="appendToInput('9')">9</button>
+        <button id = "multiply" onclick="appendToInput('*')" >X</button>
+        <button class = "white" onclick="appendToInput('4')">4</button>
+        <button class = "white" onclick="appendToInput('5')">5</button>
+        <button class = "white" onclick="appendToInput('6')">6</button>
+        <button id = "subtract" onclick="appendToInput('-')">-</button>
+        <button class = "white" onclick="appendToInput('1')">1</button>
+        <button class = "white" onclick="appendToInput('2')">2</button>
+        <button class = "white" onclick="appendToInput('3')">3</button>
+        <button id = "add" onclick="appendToInput('+')" >+</button>
+        <button class = "white" onclick="appendToInput('0')">0</button>
+        <button class = "white" onclick="appendToInput('.')">.</button>
+        <button id = "delete">Del</button>
+        <button id = "calculate" onclick="calculate()">=</button>
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
