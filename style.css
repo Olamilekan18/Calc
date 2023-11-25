@@ -10,8 +10,16 @@
     margin-right: -3px;
     /* overflow: hidden; */
 }
+.dark-mode{
+    background-color: #000;
+    color:#fff;
+    #main{
+        background-color: #000;
+        color: #fff
+    }
+}
 body {
-    transition: background-color 0.5s;
+    transition: background-color 0.7s ease;
 }
 .navbar{
     margin-right: 20px;
@@ -193,9 +201,26 @@ input{
         border-radius: 10px;
     }
     .header{
+        display:flex;
+        justify-content: space-between;
         position: absolute;
-        top:35%
+        width:100%;
+        top:37%;
+    }
+    .secondln{
+        position: absolute;
+        top:28%;
+        grid-gap: 2em;
+        padding: 20px;
+        margin: 40px auto ;
+        display: flex;
+        width:100%;
+        /* grid-template-columns: repeat(4, 1fr); */
+        grid-gap: 1em;
+}
+    .main{
+        width:100%;
+        grid-gap: 2px;
     }
 
 }
-
