@@ -2,7 +2,7 @@ const inputField = document.getElementById("input")
 const del = document.getElementById("delete")
 const darkModeToggle = document.getElementById('darkModeToggle');
 const body = document.body;
-// const main = document.body.main
+
 const main = document.getElementById("main")
 function appendToInput(value){
     inputField.value += value;
@@ -20,9 +20,7 @@ function calculate() {
     const answer = eval(inputField.value)
     display.innerHTML= answer;
 }
-// dark.addEventListener("click", ()=>{
-//     document.main.style.background ="fff"
-// })
+
 
 function randomBg(){
     return `hsl(${Math.floor(Math.random()*360)}, 100%, 50%)`
